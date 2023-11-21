@@ -288,6 +288,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminCourseController.cs" />
     <Compile Include="Controllers\AdminDashboardController.cs" />
+    <Compile Include="Controllers\AdminStudentController.cs" />
     <Compile Include="Controllers\AnnoucementUserController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\CourseUserController.cs" />
@@ -407,6 +408,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\AdminStudent\" />
     <Folder Include="Views\Test\" />
   </ItemGroup>
   <PropertyGroup>
