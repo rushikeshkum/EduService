@@ -158,6 +158,8 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\default.css" />
     <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\form-validation.css" />
+    <Content Include="js\form-validation.js" />
     <Content Include="css\jquery.nice-number.min.css" />
     <Content Include="css\magnific-popup.css" />
     <Content Include="css\nice-select.css" />
@@ -401,9 +403,13 @@
     <Content Include="Views\AdminCourse\Index.cshtml" />
     <Content Include="Views\AdminCourse\AddCourse.cshtml" />
     <Content Include="Views\AdminStudent\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\AdminVideo\Index.cshtml" />
     <Content Include="Views\AdminVideo\AddVideo.cshtml" />
     <Content Include="Views\AdminCategory\Index.cshtml" />
+=======
+    <Content Include="Views\AdminStudent\AddStudent.cshtml" />
+>>>>>>> 3d92e9f9de3c88620d94b0ed75f1474c7bb53327
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
