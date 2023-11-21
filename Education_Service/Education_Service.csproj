@@ -403,13 +403,10 @@
     <Content Include="Views\AdminCourse\Index.cshtml" />
     <Content Include="Views\AdminCourse\AddCourse.cshtml" />
     <Content Include="Views\AdminStudent\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\AdminVideo\Index.cshtml" />
     <Content Include="Views\AdminVideo\AddVideo.cshtml" />
     <Content Include="Views\AdminCategory\Index.cshtml" />
-=======
     <Content Include="Views\AdminStudent\AddStudent.cshtml" />
->>>>>>> 3d92e9f9de3c88620d94b0ed75f1474c7bb53327
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
