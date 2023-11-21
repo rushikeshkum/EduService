@@ -286,9 +286,11 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\AdminCourseController.cs" />
     <Compile Include="Controllers\AdminDashboardController.cs" />
     <Compile Include="Controllers\AdminStudentController.cs" />
+    <Compile Include="Controllers\AdminVideoController.cs" />
     <Compile Include="Controllers\AnnoucementUserController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\CourseUserController.cs" />
@@ -399,6 +401,9 @@
     <Content Include="Views\AdminCourse\Index.cshtml" />
     <Content Include="Views\AdminCourse\AddCourse.cshtml" />
     <Content Include="Views\AdminStudent\Index.cshtml" />
+    <Content Include="Views\AdminVideo\Index.cshtml" />
+    <Content Include="Views\AdminVideo\AddVideo.cshtml" />
+    <Content Include="Views\AdminCategory\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
