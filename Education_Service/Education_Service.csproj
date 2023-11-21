@@ -398,6 +398,7 @@
     <Content Include="Views\AdminDashboard\jay.cshtml" />
     <Content Include="Views\AdminCourse\Index.cshtml" />
     <Content Include="Views\AdminCourse\AddCourse.cshtml" />
+    <Content Include="Views\AdminStudent\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -408,7 +409,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\AdminStudent\" />
     <Folder Include="Views\Test\" />
   </ItemGroup>
   <PropertyGroup>
