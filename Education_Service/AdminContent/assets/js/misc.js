@@ -110,6 +110,12 @@ var lightColor = getComputedStyle(document.body).getPropertyValue('--light');
         }
       }
     })
+      // Setting a cookie
+      $.cookie('cookieName', 'cookieValue');
+
+      // Getting a cookie
+      var value = $.cookie('cookieName');
+
     if ($.cookie('purple-free-banner')!="true") {
       document.querySelector('#proBanner').classList.add('d-flex');
       document.querySelector('.navbar').classList.remove('fixed-top');
