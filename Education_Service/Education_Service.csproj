@@ -141,10 +141,16 @@
     <Content Include="AdminContent\assets\js\dashboard.js" />
     <Content Include="AdminContent\assets\js\file-upload.js" />
     <Content Include="AdminContent\assets\js\hoverable-collapse.js" />
+    <Content Include="AdminContent\assets\js\jquery-3.7.1.js" />
     <Content Include="AdminContent\assets\js\jquery.cookie.js" />
+<<<<<<< HEAD
     <Content Include="AdminContent\assets\js\jquery.dataTables.min.css" />
     <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
     <Content Include="AdminContent\assets\js\jquery.js" />
+=======
+    <Content Include="AdminContent\assets\css\jquery.dataTables.min.css" />
+    <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
+>>>>>>> 86ae5283f6525ca6a2918c3cc79605f2213ae29b
     <Content Include="AdminContent\assets\js\misc.js" />
     <Content Include="AdminContent\assets\js\off-canvas.js" />
     <Content Include="AdminContent\assets\js\todo.js" />
