@@ -143,6 +143,9 @@
     <Content Include="AdminContent\assets\js\hoverable-collapse.js" />
     <Content Include="AdminContent\assets\js\jquery-3.7.1.js" />
     <Content Include="AdminContent\assets\js\jquery.cookie.js" />
+    <Content Include="AdminContent\assets\js\jquery.dataTables.min.css" />
+    <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
+    <Content Include="AdminContent\assets\js\jquery.js" />
     <Content Include="AdminContent\assets\css\jquery.dataTables.min.css" />
     <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
     <Content Include="AdminContent\assets\js\misc.js" />
@@ -297,6 +300,7 @@
     <Compile Include="Controllers\AdminStudentController.cs" />
     <Compile Include="Controllers\AdminVideoController.cs" />
     <Compile Include="Controllers\AnnoucementUserController.cs" />
+    <Compile Include="Controllers\AdminAnnouncementController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\CourseUserController.cs" />
     <Compile Include="Controllers\CourseUserSingleController.cs" />
@@ -410,6 +414,8 @@
     <Content Include="Views\AdminVideo\AddVideo.cshtml" />
     <Content Include="Views\AdminCategory\Index.cshtml" />
     <Content Include="Views\AdminStudent\AddStudent.cshtml" />
+    <Content Include="Views\AdminAnnouncement\MakeAnnouncement.cshtml" />
+    <Content Include="Views\AdminCategory\AddCourseCategory.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

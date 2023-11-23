@@ -9,7 +9,7 @@ namespace Education_Service.Controllers
     public class AdminCategoryController : Controller
     {
         // GET: AdminCategory
-        public ActionResult Index()
+        public ActionResult AddCourseCategory()
         {
             return View();
         }
