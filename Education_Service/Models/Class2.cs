@@ -5,8 +5,7 @@ using System.Web;
 
 namespace Education_Service.Models
 {
-    public class Class1
+    public class Class2
     {
-        
     }
 }
