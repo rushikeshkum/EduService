@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 C:\Users\rushi\OneDrive\Desktop\EduService\Education_Service\bin\Education_Service.dll.config
 C:\Users\rushi\OneDrive\Desktop\EduService\Education_Service\bin\Education_Service.dll
 C:\Users\rushi\OneDrive\Desktop\EduService\Education_Service\bin\Education_Service.pdb
@@ -71,5 +70,3 @@ C:\Users\rushi\OneDrive\Desktop\EduService\Education_Service\obj\Debug\Education
 C:\Users\rushi\OneDrive\Desktop\EduService\Education_Service\obj\Debug\Education_Service.csproj.CopyComplete
 C:\Users\rushi\OneDrive\Desktop\EduService\Education_Service\obj\Debug\Education_Service.dll
 C:\Users\rushi\OneDrive\Desktop\EduService\Education_Service\obj\Debug\Education_Service.pdb
-=======
->>>>>>> d380e38fb70b616722bc344acebe20880c839057
