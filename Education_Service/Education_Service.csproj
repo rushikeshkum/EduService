@@ -43,7 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -143,22 +151,16 @@
     <Content Include="AdminContent\assets\js\hoverable-collapse.js" />
     <Content Include="AdminContent\assets\js\jquery-3.7.1.js" />
     <Content Include="AdminContent\assets\js\jquery.cookie.js" />
-<<<<<<< HEAD
-
-    <Content Include="AdminContent\assets\js\jquery.dataTables.min.css" />
-    <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
-    <Content Include="AdminContent\assets\js\jquery.js" />
-
-    <Content Include="AdminContent\assets\css\jquery.dataTables.min.css" />
-    <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
-
-=======
     <Content Include="AdminContent\assets\js\jquery.dataTables.min.css" />
     <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
     <Content Include="AdminContent\assets\js\jquery.js" />
     <Content Include="AdminContent\assets\css\jquery.dataTables.min.css" />
     <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
->>>>>>> 9f6e8700c50f9ea772ab74cb435b6c99de266e69
+    <Content Include="AdminContent\assets\js\jquery.dataTables.min.css" />
+    <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
+    <Content Include="AdminContent\assets\js\jquery.js" />
+    <Content Include="AdminContent\assets\css\jquery.dataTables.min.css" />
+    <Content Include="AdminContent\assets\js\jquery.dataTables.min.js" />
     <Content Include="AdminContent\assets\js\misc.js" />
     <Content Include="AdminContent\assets\js\off-canvas.js" />
     <Content Include="AdminContent\assets\js\todo.js" />
@@ -300,10 +302,23 @@
     <Content Include="js\vendor\jquery-1.12.4.min.js" />
     <Content Include="js\vendor\modernizr-3.6.0.min.js" />
     <Content Include="js\waypoints.min.js" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CollectionReceivedView.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\AdminCourseController.cs" />
@@ -323,7 +338,74 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="PaymentRefundView.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalesReturnView.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesView.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAnnouncement.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblClassCategory.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblClassCourse.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCourseVideo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEducatorDetail.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblEnquiry.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblIdPassword.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblRefund.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSale.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblSalesReturn.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblStudentData.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTransaction.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblTrnMode.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -399,6 +481,13 @@
     <Content Include="AdminContent\assets\vendors\mdi\fonts\materialdesignicons-webfont.woff2" />
     <Content Include="AdminContent\PSD\Purple_dashboard_free.psd" />
     <Content Include="AdminContent\package.json" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Views\Shared\UserLayout.cshtml" />
     <Content Include="Views\Shared\AdminLayout.cshtml" />
@@ -423,10 +512,10 @@
     <Content Include="Views\AdminStudent\Index.cshtml" />
     <Content Include="Views\AdminVideo\Index.cshtml" />
     <Content Include="Views\AdminVideo\AddVideo.cshtml" />
-    <Content Include="Views\AdminCategory\Index.cshtml" />
     <Content Include="Views\AdminStudent\AddStudent.cshtml" />
     <Content Include="Views\AdminAnnouncement\MakeAnnouncement.cshtml" />
     <Content Include="Views\AdminCategory\AddCourseCategory.cshtml" />
+    <Content Include="Views\AdminCategory\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -436,8 +525,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
