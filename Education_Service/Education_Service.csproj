@@ -516,6 +516,7 @@
     <Content Include="Views\AdminAnnouncement\MakeAnnouncement.cshtml" />
     <Content Include="Views\AdminCategory\AddCourseCategory.cshtml" />
     <Content Include="Views\AdminCategory\Edit.cshtml" />
+    <Content Include="Views\AdminVideo\Index2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

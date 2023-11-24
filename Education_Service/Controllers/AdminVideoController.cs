@@ -8,6 +8,7 @@ namespace Education_Service.Controllers
 {
     public class AdminVideoController : Controller
     {
+        TechedEntities db=new TechedEntities();
         // Show all Video using this Action
         public ActionResult Index()
         {
@@ -16,6 +17,30 @@ namespace Education_Service.Controllers
 
         public ActionResult AddVideo()
         {
+            return View();
+        }
+
+        //public ActionResult Index2(int courseId)
+        //{
+
+        //    var obj = db.tblCourseVideos.Where(c => c.CourseId == courseId).ToList();
+        //    if (obj != null)
+        //    {
+        //        ViewBag.Allvideo = obj;
+
+        //    }
+
+        //    return View();
+        //}
+        public ActionResult Index2(int courseId)
+        {
+            var obj = db.tblCourseVideos.Where(c => c.CourseId == courseId).ToList();
+
+            if (obj != null)
+            {
+                ViewBag.Allvideo = obj;
+            }
+
             return View();
         }
     }
